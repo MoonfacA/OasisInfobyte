@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Signup</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+     
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      
+    </head>
+    <body>
+      <!-- header section start -->
+      <div class="header_section">
+        <nav class="destop_header navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo">
+            
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Calculator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="depatments.html">Currency</a>
+              </li>
+              <li class="nav-item">
+                <a class="logo_main" href="index.html"><img src="images/logo.png" width="90px" height="90px"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="depatments.html">Weight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="depatments.html">Length</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Temperature</a>
+              </li>              
+            </ul>
+          </div>
+        </nav>
+        <nav class="mobile_header navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Calculator</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="logo_main" href="index.html"><img src="images/logo.png" alt="Avatar"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="depatments.html">Currency</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="depatments.html">Currency</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Length</a>
+              </li> 
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Temperature</a>
+              </li>              
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- header section end -->
+      <!-- main section -->
+      <div class="main_section layout_padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="main_text">Temperature Converter</h1>
+                
+              <div class="form-group">
+                 <!-- Temperature Form -->
+                 <div class="conversion_table" id="temperature">
+             
+                   <input type="letters" id="Inputtemperature" placeholder="Enter value">
+                   <select id="FromTemperatureUnit">
+                      <option value="celsius">Celsius</option>
+                      <option value="kelvin">Kelvin</option>
+                      <option value="fahrenheit">Fahrenheit</option>
+                   </select>
+                   <br>
+                   <span>To</span>
+                   <select id="ToTemperatureUnit">
+                      <option value="celsius">Celsius</option>
+                      <option value="kelvin">Kelvin</option>
+                      <option value="fahrenheit">Fahrenheit</option>
+                   </select>
+                  
+                   <div>
+                    <button class="button" onclick="convertTemperature()">Convert</button>
+                  </div> 
+                   <div class="result">
+                      <p id="temperatureResult">Result:</p>
+                   </div>
+                    <!-- /Temperature Form --> 
+                 </div>
+                    <!--loader-->
+                     <div id="container">
+                      <label class="loading-title">Unixco</label>
+                      <span class="loading-circle sp1">
+                       <span class="loading-circle sp2">
+                        <span class="loading-circle sp3"></span>
+                       </span>
+                      </span>
+                     </div>
+                    <!--/loader-->
+              </div>           
+
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <!-- /main section -->
+     
+      <!-- footer section -->
+     
+    <div class="social_section layout_padding">
+      <div class="container ">
+       
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+          <div class="social-box">
+            <a href="">
+              <img src="images/fb-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/twitter-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/linkedin-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/instagram-icon.png" alt="" />
+            </a>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- /footer section end -->
+   
+      <!-- Javascript files-->
+      
+      <script src="script.js"></script>
+
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      
+   </body>
+   </html>
